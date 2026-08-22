@@ -1,0 +1,16 @@
+# Secrets -- never commit real credentials. Only .env.example (no secrets) is tracked.
+.env
+
+# Raw Kaggle data -- re-downloadable, kept out of git to keep the repo small.
+# See datasets/README.md for the source link.
+datasets/*.csv
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node / dashboard build output (created later in the roadmap)
+node_modules/
+dist/
