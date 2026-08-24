@@ -5,6 +5,8 @@ import { SalesTrendLine } from "./components/charts/sales/SalesTrendLine";
 import { CategoryRevenueStack } from "./components/charts/sales/CategoryRevenueStack";
 import { DeliveryStateBar } from "./components/charts/delivery/DeliveryStateBar";
 import { DeliverySellerBar } from "./components/charts/delivery/DeliverySellerBar";
+import { ReviewDelayBar } from "./components/charts/reviews/ReviewDelayBar";
+import { ReviewDumbbell } from "./components/charts/reviews/ReviewDumbbell";
 import styles from "./App.module.css";
 
 function Placeholder({ label }: { label: string }) {
@@ -56,8 +58,8 @@ function App() {
       </Section>
 
       <Section id="reviews" title="Reviews" columns={2}>
-        <Placeholder label="Delay-bucket bar — built in step 8" />
-        <Placeholder label="On-time vs. late dumbbell — built in step 8" />
+        <ReviewDelayBar />
+        <ReviewDumbbell />
       </Section>
 
       <Section id="categories" title="Category performance">

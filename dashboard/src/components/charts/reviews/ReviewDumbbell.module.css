@@ -1,0 +1,25 @@
+.row:hover .rowLabel,
+.row:focus-visible .rowLabel {
+  fill: var(--text-primary);
+}
+
+.legend {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legendDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
