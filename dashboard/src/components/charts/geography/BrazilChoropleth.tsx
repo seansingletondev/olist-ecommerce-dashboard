@@ -7,6 +7,7 @@ import { useContainerWidth } from "../../../lib/useContainerWidth";
 import { sequentialScale } from "../../../lib/colorScales";
 import { sequentialBlue } from "../../../lib/palette";
 import { formatCount } from "../../../lib/format";
+import { formatStateLabel } from "../../../lib/brazilStates";
 import type { GeographicBreakdownRow } from "../../../types/data";
 import { ChartCard } from "../../layout/ChartCard";
 import { ScaleLegend } from "../../layout/ScaleLegend";
@@ -109,7 +110,7 @@ export function BrazilChoropleth() {
           .sort((a, b) => b.order_count - a.order_count)
           .map((row) => (
             <tr key={row.state}>
-              <td>{row.state}</td>
+              <td>{formatStateLabel(row.state)}</td>
               <td>{formatCount(row.order_count)}</td>
               <td>{row.avg_delivery_days.toFixed(1)}</td>
             </tr>
@@ -200,7 +201,7 @@ export function BrazilChoropleth() {
               <Tooltip
                 x={hovered.x}
                 y={hovered.y}
-                title={hovered.sigla}
+                title={formatStateLabel(hovered.sigla)}
                 containerWidth={width}
                 rows={
                   hoveredRow

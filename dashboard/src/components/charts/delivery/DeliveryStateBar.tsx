@@ -2,6 +2,7 @@ import { useMemo } from "react";
 import { useJsonData } from "../../../lib/useJsonData";
 import { sequentialScale } from "../../../lib/colorScales";
 import { formatCount, formatPercent } from "../../../lib/format";
+import { formatStateLabel } from "../../../lib/brazilStates";
 import type { DeliveryPerformanceByStateRow } from "../../../types/data";
 import { ChartCard } from "../../layout/ChartCard";
 import { HorizontalBarChart, type BarItem } from "../shared/HorizontalBarChart";
@@ -17,7 +18,7 @@ export function DeliveryStateBar() {
     const colorScale = sequentialScale([0, Math.max(...data.map((d) => d.pct_late))]);
     return sorted.map((row) => ({
       id: row.state,
-      label: row.state,
+      label: formatStateLabel(row.state),
       value: row.pct_late,
       color: colorScale(row.pct_late),
       extraTooltipRows: [{ label: "Delivered orders", value: formatCount(row.delivered_order_count) }],
@@ -46,7 +47,7 @@ export function DeliveryStateBar() {
           .sort((a, b) => b.pct_late - a.pct_late)
           .map((row) => (
             <tr key={row.state} style={{ borderTop: "1px solid var(--gridline)" }}>
-              <td style={{ padding: "6px 10px" }}>{row.state}</td>
+              <td style={{ padding: "6px 10px" }}>{formatStateLabel(row.state)}</td>
               <td style={{ padding: "6px 10px" }}>{formatCount(row.delivered_order_count)}</td>
               <td style={{ padding: "6px 10px" }}>{formatPercent(row.pct_late)}</td>
             </tr>
@@ -71,7 +72,7 @@ export function DeliveryStateBar() {
         </>
       }
     >
-      <HorizontalBarChart items={items} formatValue={formatPercent} />
+      <HorizontalBarChart items={items} formatValue={formatPercent} labelWidth={200} />
     </ChartCard>
   );
 }

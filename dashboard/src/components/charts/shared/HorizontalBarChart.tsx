@@ -17,12 +17,14 @@ interface HorizontalBarChartProps {
   formatValue: (v: number) => string;
   /** Fixed domain max (e.g. 100 for a percentage) -- defaults to the largest item value. */
   domainMax?: number;
+  /** Width of the label column in px. Defaults to 132; widen it for charts with longer labels (e.g. full state names). */
+  labelWidth?: number;
 }
 
 const BAR_HEIGHT = 20;
 const BAR_GAP = 8;
 const MARGIN = { top: 4, right: 56, bottom: 4, left: 0 };
-const LABEL_WIDTH = 132;
+const DEFAULT_LABEL_WIDTH = 132;
 
 /**
  * A sequential-color horizontal bar chart -- magnitude comparison across
@@ -31,11 +33,16 @@ const LABEL_WIDTH = 132;
  * interaction spec for bar charts), and the value is labeled at the bar's
  * tip since these lists are short enough for direct labels to stay legible.
  */
-export function HorizontalBarChart({ items, formatValue, domainMax }: HorizontalBarChartProps) {
+export function HorizontalBarChart({
+  items,
+  formatValue,
+  domainMax,
+  labelWidth = DEFAULT_LABEL_WIDTH,
+}: HorizontalBarChartProps) {
   const { ref, width } = useContainerWidth<HTMLDivElement>();
   const [hoveredId, setHoveredId] = useState<string | null>(null);
 
-  const plotWidth = Math.max(0, width - MARGIN.left - MARGIN.right - LABEL_WIDTH);
+  const plotWidth = Math.max(0, width - MARGIN.left - MARGIN.right - labelWidth);
   const height = items.length * (BAR_HEIGHT + BAR_GAP) - BAR_GAP + MARGIN.top + MARGIN.bottom;
 
   const max = domainMax ?? Math.max(...items.map((d) => d.value), 0);
@@ -48,7 +55,7 @@ export function HorizontalBarChart({ items, formatValue, domainMax }: Horizontal
     <div ref={ref} style={{ position: "relative", width: "100%" }}>
       {width > 0 && (
         <svg width="100%" height={height} role="img" aria-label="Horizontal bar chart">
-          <g transform={`translate(${MARGIN.left + LABEL_WIDTH},${MARGIN.top})`}>
+          <g transform={`translate(${MARGIN.left + labelWidth},${MARGIN.top})`}>
             {items.map((item, i) => {
               const y = i * (BAR_HEIGHT + BAR_GAP);
               const barWidth = Math.max(0, x(item.value));
@@ -102,7 +109,7 @@ export function HorizontalBarChart({ items, formatValue, domainMax }: Horizontal
 
       {hoveredItem && hoveredIndex >= 0 && (
         <Tooltip
-          x={LABEL_WIDTH + x(hoveredItem.value) + 20}
+          x={labelWidth + x(hoveredItem.value) + 20}
           y={hoveredIndex * (BAR_HEIGHT + BAR_GAP)}
           title={hoveredItem.label}
           containerWidth={width}
