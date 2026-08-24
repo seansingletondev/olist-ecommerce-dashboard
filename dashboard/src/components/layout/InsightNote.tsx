@@ -16,7 +16,7 @@ export function InsightNote({ children }: InsightNoteProps) {
   return (
     <div className={styles.insight}>
       <p className={styles.label}>Insight</p>
-      <p className={styles.body}>{children}</p>
+      <div className={styles.body}>{children}</div>
     </div>
   );
 }

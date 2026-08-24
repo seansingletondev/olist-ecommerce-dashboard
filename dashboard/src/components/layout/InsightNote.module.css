@@ -14,8 +14,31 @@
 }
 
 .body {
-  margin: 0;
   font-size: 13px;
   line-height: 1.5;
   color: var(--text-secondary);
+}
+
+.body p {
+  margin: 0 0 8px;
+}
+
+.body ul {
+  margin: 0 0 8px;
+  padding-left: 18px;
+}
+
+.body li {
+  margin-bottom: 4px;
+}
+
+.body p:last-child,
+.body ul:last-child,
+.body li:last-child {
+  margin-bottom: 0;
+}
+
+.body strong {
+  color: var(--text-primary);
+  font-weight: 600;
 }
