@@ -1,0 +1,25 @@
+.chartWrap {
+  position: relative;
+  width: 100%;
+}
+
+.axisLabel {
+  font-size: 11px;
+  fill: var(--text-muted);
+}
+
+.gridline {
+  stroke: var(--gridline);
+  stroke-width: 1;
+}
+
+.crosshair {
+  stroke: var(--baseline);
+  stroke-width: 1;
+  pointer-events: none;
+}
+
+.hitArea {
+  fill: transparent;
+  cursor: crosshair;
+}

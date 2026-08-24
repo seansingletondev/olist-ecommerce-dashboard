@@ -1,6 +1,8 @@
 import { Section } from "./components/layout/Section";
 import { OverviewKpis } from "./components/overview/OverviewKpis";
 import { BrazilChoropleth } from "./components/charts/geography/BrazilChoropleth";
+import { SalesTrendLine } from "./components/charts/sales/SalesTrendLine";
+import { CategoryRevenueStack } from "./components/charts/sales/CategoryRevenueStack";
 import styles from "./App.module.css";
 
 function Placeholder({ label }: { label: string }) {
@@ -42,7 +44,8 @@ function App() {
       </Section>
 
       <Section id="sales" title="Sales trends">
-        <Placeholder label="Monthly revenue + category stack — built in step 6" />
+        <SalesTrendLine />
+        <CategoryRevenueStack />
       </Section>
 
       <Section id="delivery" title="Delivery performance" columns={2}>

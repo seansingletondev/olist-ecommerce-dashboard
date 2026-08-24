@@ -44,3 +44,9 @@ export function formatMonth(iso: string): string {
 export function truncateId(id: string, length = 8): string {
   return id.length > length ? `${id.slice(0, length)}…` : id;
 }
+
+/** "health_beauty" -> "Health beauty" -- the source data's category names are snake_case. */
+export function formatCategoryLabel(category: string): string {
+  const spaced = category.replace(/_/g, " ");
+  return spaced.charAt(0).toUpperCase() + spaced.slice(1);
+}
