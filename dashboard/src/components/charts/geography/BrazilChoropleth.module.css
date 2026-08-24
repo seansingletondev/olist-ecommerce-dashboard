@@ -1,0 +1,75 @@
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.toggle {
+  display: inline-flex;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.toggleButton {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 12px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.toggleButton[aria-pressed="true"] {
+  background: var(--series-1);
+  color: white;
+}
+
+.mapWrap {
+  position: relative;
+  width: 100%;
+}
+
+.state {
+  stroke: var(--surface-1);
+  stroke-width: 1;
+  cursor: pointer;
+  transition: filter 0.1s ease;
+}
+
+.state:hover,
+.state:focus-visible {
+  filter: brightness(1.12);
+  outline: none;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 6px 10px;
+  border-bottom: 1px solid var(--gridline);
+  color: var(--text-secondary);
+}
+
+.table th {
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.table td:first-child,
+.table th:first-child {
+  color: var(--text-primary);
+  font-variant-numeric: tabular-nums;
+}
