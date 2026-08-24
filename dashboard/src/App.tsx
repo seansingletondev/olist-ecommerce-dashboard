@@ -7,6 +7,8 @@ import { DeliveryStateBar } from "./components/charts/delivery/DeliveryStateBar"
 import { DeliverySellerBar } from "./components/charts/delivery/DeliverySellerBar";
 import { ReviewDelayBar } from "./components/charts/reviews/ReviewDelayBar";
 import { ReviewDumbbell } from "./components/charts/reviews/ReviewDumbbell";
+import { CategoryBubble } from "./components/charts/categories/CategoryBubble";
+import { CategoryTable } from "./components/charts/categories/CategoryTable";
 import styles from "./App.module.css";
 
 function Placeholder({ label }: { label: string }) {
@@ -63,7 +65,8 @@ function App() {
       </Section>
 
       <Section id="categories" title="Category performance">
-        <Placeholder label="Revenue vs. review bubble chart + table — built in step 9" />
+        <CategoryBubble />
+        <CategoryTable />
       </Section>
 
       <Section id="customers" title="Customer segmentation (RFM)" columns={2}>
