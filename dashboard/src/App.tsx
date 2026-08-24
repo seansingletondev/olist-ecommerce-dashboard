@@ -9,24 +9,10 @@ import { ReviewDelayBar } from "./components/charts/reviews/ReviewDelayBar";
 import { ReviewDumbbell } from "./components/charts/reviews/ReviewDumbbell";
 import { CategoryBubble } from "./components/charts/categories/CategoryBubble";
 import { CategoryTable } from "./components/charts/categories/CategoryTable";
+import { SegmentShareBar } from "./components/charts/customers/SegmentShareBar";
+import { SegmentMetricBars } from "./components/charts/customers/SegmentMetricBars";
+import { RfmHeatmap } from "./components/charts/customers/RfmHeatmap";
 import styles from "./App.module.css";
-
-function Placeholder({ label }: { label: string }) {
-  return (
-    <div
-      style={{
-        border: "1px dashed var(--border)",
-        borderRadius: 12,
-        padding: 40,
-        textAlign: "center",
-        color: "var(--text-muted)",
-        fontSize: 13,
-      }}
-    >
-      {label}
-    </div>
-  );
-}
 
 function App() {
   return (
@@ -69,9 +55,10 @@ function App() {
         <CategoryTable />
       </Section>
 
-      <Section id="customers" title="Customer segmentation (RFM)" columns={2}>
-        <Placeholder label="Segment share + metric bars — built in step 10" />
-        <Placeholder label="Recency × monetary heatmap — built in step 10" />
+      <Section id="customers" title="Customer segmentation (RFM)">
+        <SegmentShareBar />
+        <SegmentMetricBars />
+        <RfmHeatmap />
       </Section>
 
       <footer className={styles.footer}>
