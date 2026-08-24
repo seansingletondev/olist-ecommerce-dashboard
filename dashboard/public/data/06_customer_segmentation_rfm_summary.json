@@ -1,0 +1,30 @@
+[
+  {
+    "segment": "champion",
+    "customer_count": 15107,
+    "avg_recency_days": 158.0,
+    "avg_frequency": 1.11,
+    "avg_monetary": 332.45
+  },
+  {
+    "segment": "loyal",
+    "customer_count": 27163,
+    "avg_recency_days": 284.0,
+    "avg_frequency": 1.05,
+    "avg_monetary": 202.04
+  },
+  {
+    "segment": "at_risk",
+    "customer_count": 37350,
+    "avg_recency_days": 287.0,
+    "avg_frequency": 1.01,
+    "avg_monetary": 66.45
+  },
+  {
+    "segment": "hibernating",
+    "customer_count": 15363,
+    "avg_recency_days": 421.0,
+    "avg_frequency": 1.0,
+    "avg_monetary": 32.69
+  }
+]

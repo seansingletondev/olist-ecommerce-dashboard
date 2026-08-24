@@ -1,0 +1,102 @@
+[
+  {
+    "seller_id": "f76a3b1349b6df1ee875d1f3fa4340f0",
+    "delivered_order_count": 24,
+    "pct_late": 37.5
+  },
+  {
+    "seller_id": "821fb029fc6e495ca4f08a35d51e53a5",
+    "delivered_order_count": 24,
+    "pct_late": 37.5
+  },
+  {
+    "seller_id": "ede0c03645598cdfc63ca8237acbe73d",
+    "delivered_order_count": 43,
+    "pct_late": 34.9
+  },
+  {
+    "seller_id": "ad781527c93d00d89a11eecd9dcad7c1",
+    "delivered_order_count": 38,
+    "pct_late": 31.6
+  },
+  {
+    "seller_id": "835f0f7810c76831d6c7d24c7a646d4d",
+    "delivered_order_count": 42,
+    "pct_late": 31.0
+  },
+  {
+    "seller_id": "54965bbe3e4f07ae045b90b0b8541f52",
+    "delivered_order_count": 73,
+    "pct_late": 30.1
+  },
+  {
+    "seller_id": "054694fa03fe82cec4b7551487331d74",
+    "delivered_order_count": 20,
+    "pct_late": 30.0
+  },
+  {
+    "seller_id": "7f152321c60a266edc53af1925ef96c1",
+    "delivered_order_count": 20,
+    "pct_late": 30.0
+  },
+  {
+    "seller_id": "4e5725ba188db8252977a4f0227bd462",
+    "delivered_order_count": 21,
+    "pct_late": 28.6
+  },
+  {
+    "seller_id": "2a1348e9addc1af5aaa619b1a3679d6b",
+    "delivered_order_count": 48,
+    "pct_late": 27.1
+  },
+  {
+    "seller_id": "66e0557ecc2b4dbea057e93f215f68d8",
+    "delivered_order_count": 30,
+    "pct_late": 26.7
+  },
+  {
+    "seller_id": "a49928bcdf77c55c6d6e05e09a9b4ca5",
+    "delivered_order_count": 96,
+    "pct_late": 26.0
+  },
+  {
+    "seller_id": "ef990a83bbea832f36ebe81376335aa8",
+    "delivered_order_count": 43,
+    "pct_late": 25.6
+  },
+  {
+    "seller_id": "ff69aa92bb6b1bf9b8b7a51c2ed9cf8b",
+    "delivered_order_count": 20,
+    "pct_late": 25.0
+  },
+  {
+    "seller_id": "1dfe5347016252a7884b694d4f10f5c4",
+    "delivered_order_count": 20,
+    "pct_late": 25.0
+  },
+  {
+    "seller_id": "beadbee30901a7f61d031b6b686095ad",
+    "delivered_order_count": 64,
+    "pct_late": 25.0
+  },
+  {
+    "seller_id": "06a2c3af7b3aee5d69171b0e14f0ee87",
+    "delivered_order_count": 389,
+    "pct_late": 23.1
+  },
+  {
+    "seller_id": "cac4c8e7b1ca6252d8f20b2fc1a2e4af",
+    "delivered_order_count": 74,
+    "pct_late": 23.0
+  },
+  {
+    "seller_id": "71039d19d4303bf9054d69e9a9236699",
+    "delivered_order_count": 35,
+    "pct_late": 22.9
+  },
+  {
+    "seller_id": "6039e27294dc75811c0d8a39069f52c0",
+    "delivered_order_count": 63,
+    "pct_late": 22.2
+  }
+]

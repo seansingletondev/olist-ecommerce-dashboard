@@ -1,0 +1,27 @@
+[
+  {
+    "delay_bucket": "early_or_on_time",
+    "review_count": 88653,
+    "avg_review_score": 4.29
+  },
+  {
+    "delay_bucket": "1_to_3_days_late",
+    "review_count": 2651,
+    "avg_review_score": 3.77
+  },
+  {
+    "delay_bucket": "4_to_7_days_late",
+    "review_count": 1777,
+    "avg_review_score": 2.32
+  },
+  {
+    "delay_bucket": "8_to_14_days_late",
+    "review_count": 1758,
+    "avg_review_score": 1.75
+  },
+  {
+    "delay_bucket": "15_plus_days_late",
+    "review_count": 1514,
+    "avg_review_score": 1.71
+  }
+]

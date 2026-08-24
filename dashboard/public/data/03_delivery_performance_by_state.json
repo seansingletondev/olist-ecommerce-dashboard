@@ -1,0 +1,137 @@
+[
+  {
+    "state": "AL",
+    "delivered_order_count": 397,
+    "pct_late": 23.9
+  },
+  {
+    "state": "MA",
+    "delivered_order_count": 717,
+    "pct_late": 19.7
+  },
+  {
+    "state": "PI",
+    "delivered_order_count": 476,
+    "pct_late": 16.0
+  },
+  {
+    "state": "CE",
+    "delivered_order_count": 1279,
+    "pct_late": 15.3
+  },
+  {
+    "state": "SE",
+    "delivered_order_count": 335,
+    "pct_late": 15.2
+  },
+  {
+    "state": "BA",
+    "delivered_order_count": 3256,
+    "pct_late": 14.0
+  },
+  {
+    "state": "RJ",
+    "delivered_order_count": 12350,
+    "pct_late": 13.5
+  },
+  {
+    "state": "TO",
+    "delivered_order_count": 274,
+    "pct_late": 12.8
+  },
+  {
+    "state": "PA",
+    "delivered_order_count": 946,
+    "pct_late": 12.4
+  },
+  {
+    "state": "ES",
+    "delivered_order_count": 1995,
+    "pct_late": 12.2
+  },
+  {
+    "state": "RR",
+    "delivered_order_count": 41,
+    "pct_late": 12.2
+  },
+  {
+    "state": "MS",
+    "delivered_order_count": 701,
+    "pct_late": 11.6
+  },
+  {
+    "state": "PB",
+    "delivered_order_count": 517,
+    "pct_late": 11.0
+  },
+  {
+    "state": "RN",
+    "delivered_order_count": 474,
+    "pct_late": 10.8
+  },
+  {
+    "state": "PE",
+    "delivered_order_count": 1593,
+    "pct_late": 10.8
+  },
+  {
+    "state": "SC",
+    "delivered_order_count": 3546,
+    "pct_late": 9.8
+  },
+  {
+    "state": "GO",
+    "delivered_order_count": 1957,
+    "pct_late": 8.2
+  },
+  {
+    "state": "DF",
+    "delivered_order_count": 2080,
+    "pct_late": 7.1
+  },
+  {
+    "state": "RS",
+    "delivered_order_count": 5344,
+    "pct_late": 7.1
+  },
+  {
+    "state": "MT",
+    "delivered_order_count": 886,
+    "pct_late": 6.8
+  },
+  {
+    "state": "SP",
+    "delivered_order_count": 40494,
+    "pct_late": 5.9
+  },
+  {
+    "state": "MG",
+    "delivered_order_count": 11354,
+    "pct_late": 5.6
+  },
+  {
+    "state": "PR",
+    "delivered_order_count": 4923,
+    "pct_late": 5.0
+  },
+  {
+    "state": "AP",
+    "delivered_order_count": 67,
+    "pct_late": 4.5
+  },
+  {
+    "state": "AM",
+    "delivered_order_count": 145,
+    "pct_late": 4.1
+  },
+  {
+    "state": "AC",
+    "delivered_order_count": 80,
+    "pct_late": 3.8
+  },
+  {
+    "state": "RO",
+    "delivered_order_count": 243,
+    "pct_late": 2.9
+  }
+]

@@ -1,0 +1,513 @@
+[
+  {
+    "category": "health_beauty",
+    "order_count": 8800,
+    "total_revenue": 1255695.13,
+    "review_count": 8826,
+    "avg_review_score": 4.14
+  },
+  {
+    "category": "watches_gifts",
+    "order_count": 5604,
+    "total_revenue": 1198185.21,
+    "review_count": 5586,
+    "avg_review_score": 4.02
+  },
+  {
+    "category": "bed_bath_table",
+    "order_count": 9399,
+    "total_revenue": 1035964.06,
+    "review_count": 9432,
+    "avg_review_score": 3.9
+  },
+  {
+    "category": "sports_leisure",
+    "order_count": 7673,
+    "total_revenue": 979740.92,
+    "review_count": 7721,
+    "avg_review_score": 4.11
+  },
+  {
+    "category": "computers_accessories",
+    "order_count": 6654,
+    "total_revenue": 904322.02,
+    "review_count": 6702,
+    "avg_review_score": 3.93
+  },
+  {
+    "category": "furniture_decor",
+    "order_count": 6425,
+    "total_revenue": 727465.05,
+    "review_count": 6457,
+    "avg_review_score": 3.9
+  },
+  {
+    "category": "housewares",
+    "order_count": 5847,
+    "total_revenue": 626825.8,
+    "review_count": 5865,
+    "avg_review_score": 4.06
+  },
+  {
+    "category": "cool_stuff",
+    "order_count": 3616,
+    "total_revenue": 620770.49,
+    "review_count": 3609,
+    "avg_review_score": 4.15
+  },
+  {
+    "category": "auto",
+    "order_count": 3872,
+    "total_revenue": 586585.73,
+    "review_count": 3895,
+    "avg_review_score": 4.07
+  },
+  {
+    "category": "garden_tools",
+    "order_count": 3505,
+    "total_revenue": 481009.94,
+    "review_count": 3506,
+    "avg_review_score": 4.04
+  },
+  {
+    "category": "toys",
+    "order_count": 3855,
+    "total_revenue": 479808.54,
+    "review_count": 3861,
+    "avg_review_score": 4.16
+  },
+  {
+    "category": "baby",
+    "order_count": 2868,
+    "total_revenue": 410312.2,
+    "review_count": 2869,
+    "avg_review_score": 4.01
+  },
+  {
+    "category": "perfumery",
+    "order_count": 3146,
+    "total_revenue": 396599.31,
+    "review_count": 3165,
+    "avg_review_score": 4.16
+  },
+  {
+    "category": "telephony",
+    "order_count": 4183,
+    "total_revenue": 322342.64,
+    "review_count": 4173,
+    "avg_review_score": 3.95
+  },
+  {
+    "category": "office_furniture",
+    "order_count": 1272,
+    "total_revenue": 273580.7,
+    "review_count": 1268,
+    "avg_review_score": 3.49
+  },
+  {
+    "category": "stationery",
+    "order_count": 2299,
+    "total_revenue": 229593.84,
+    "review_count": 2302,
+    "avg_review_score": 4.19
+  },
+  {
+    "category": "computers",
+    "order_count": 181,
+    "total_revenue": 222963.13,
+    "review_count": 178,
+    "avg_review_score": 4.18
+  },
+  {
+    "category": "pet_shop",
+    "order_count": 1706,
+    "total_revenue": 213766.63,
+    "review_count": 1703,
+    "avg_review_score": 4.19
+  },
+  {
+    "category": "small_appliances",
+    "order_count": 622,
+    "total_revenue": 187907.26,
+    "review_count": 628,
+    "avg_review_score": 4.15
+  },
+  {
+    "category": "musical_instruments",
+    "order_count": 620,
+    "total_revenue": 187788.44,
+    "review_count": 623,
+    "avg_review_score": 4.15
+  },
+  {
+    "category": "electronics",
+    "order_count": 2543,
+    "total_revenue": 157079.54,
+    "review_count": 2532,
+    "avg_review_score": 4.04
+  },
+  {
+    "category": "consoles_games",
+    "order_count": 1054,
+    "total_revenue": 154927.27,
+    "review_count": 1053,
+    "avg_review_score": 4.02
+  },
+  {
+    "category": "fashion_bags_accessories",
+    "order_count": 1858,
+    "total_revenue": 151622.75,
+    "review_count": 1870,
+    "avg_review_score": 4.14
+  },
+  {
+    "category": "construction_tools_construction",
+    "order_count": 746,
+    "total_revenue": 144550.19,
+    "review_count": 744,
+    "avg_review_score": 4.05
+  },
+  {
+    "category": "luggage_accessories",
+    "order_count": 1030,
+    "total_revenue": 140111.38,
+    "review_count": 1030,
+    "avg_review_score": 4.32
+  },
+  {
+    "category": "home_appliances_2",
+    "order_count": 231,
+    "total_revenue": 110649.74,
+    "review_count": 234,
+    "avg_review_score": 4.14
+  },
+  {
+    "category": "home_construction",
+    "order_count": 489,
+    "total_revenue": 83010.12,
+    "review_count": 488,
+    "avg_review_score": 3.94
+  },
+  {
+    "category": "home_appliances",
+    "order_count": 762,
+    "total_revenue": 80001.24,
+    "review_count": 799,
+    "avg_review_score": 4.17
+  },
+  {
+    "category": "agro_industry_and_commerce",
+    "order_count": 182,
+    "total_revenue": 72530.47,
+    "review_count": 182,
+    "avg_review_score": 4.0
+  },
+  {
+    "category": "furniture_living_room",
+    "order_count": 420,
+    "total_revenue": 68638.56,
+    "review_count": 420,
+    "avg_review_score": 3.9
+  },
+  {
+    "category": "home_confort",
+    "order_count": 397,
+    "total_revenue": 58572.04,
+    "review_count": 398,
+    "avg_review_score": 3.83
+  },
+  {
+    "category": "fixed_telephony",
+    "order_count": 214,
+    "total_revenue": 57824.21,
+    "review_count": 215,
+    "avg_review_score": 3.68
+  },
+  {
+    "category": "air_conditioning",
+    "order_count": 251,
+    "total_revenue": 54723.16,
+    "review_count": 249,
+    "avg_review_score": 3.97
+  },
+  {
+    "category": "audio",
+    "order_count": 349,
+    "total_revenue": 50668.6,
+    "review_count": 348,
+    "avg_review_score": 3.83
+  },
+  {
+    "category": "small_appliances_home_oven_and_coffee",
+    "order_count": 75,
+    "total_revenue": 47445.71,
+    "review_count": 75,
+    "avg_review_score": 4.3
+  },
+  {
+    "category": "kitchen_dining_laundry_garden_furniture",
+    "order_count": 246,
+    "total_revenue": 46070.37,
+    "review_count": 247,
+    "avg_review_score": 3.96
+  },
+  {
+    "category": "books_general_interest",
+    "order_count": 505,
+    "total_revenue": 45622.29,
+    "review_count": 508,
+    "avg_review_score": 4.45
+  },
+  {
+    "category": "construction_tools_lights",
+    "order_count": 243,
+    "total_revenue": 40002.0,
+    "review_count": 242,
+    "avg_review_score": 4.05
+  },
+  {
+    "category": "industry_commerce_and_business",
+    "order_count": 235,
+    "total_revenue": 39669.61,
+    "review_count": 234,
+    "avg_review_score": 4.1
+  },
+  {
+    "category": "construction_tools_safety",
+    "order_count": 165,
+    "total_revenue": 39589.02,
+    "review_count": 166,
+    "avg_review_score": 3.84
+  },
+  {
+    "category": "food",
+    "order_count": 449,
+    "total_revenue": 29243.51,
+    "review_count": 445,
+    "avg_review_score": 4.22
+  },
+  {
+    "category": "market_place",
+    "order_count": 279,
+    "total_revenue": 28288.47,
+    "review_count": 278,
+    "avg_review_score": 4.02
+  },
+  {
+    "category": "costruction_tools_garden",
+    "order_count": 192,
+    "total_revenue": 25552.18,
+    "review_count": 196,
+    "avg_review_score": 4.05
+  },
+  {
+    "category": "art",
+    "order_count": 201,
+    "total_revenue": 24167.64,
+    "review_count": 200,
+    "avg_review_score": 3.94
+  },
+  {
+    "category": "fashion_shoes",
+    "order_count": 238,
+    "total_revenue": 23352.88,
+    "review_count": 239,
+    "avg_review_score": 4.23
+  },
+  {
+    "category": "drinks",
+    "order_count": 296,
+    "total_revenue": 22378.71,
+    "review_count": 297,
+    "avg_review_score": 4.05
+  },
+  {
+    "category": "signaling_and_security",
+    "order_count": 140,
+    "total_revenue": 21509.23,
+    "review_count": 138,
+    "avg_review_score": 4.09
+  },
+  {
+    "category": "furniture_bedroom",
+    "order_count": 95,
+    "total_revenue": 20028.78,
+    "review_count": 96,
+    "avg_review_score": 4.12
+  },
+  {
+    "category": "books_technical",
+    "order_count": 260,
+    "total_revenue": 19096.06,
+    "review_count": 259,
+    "avg_review_score": 4.37
+  },
+  {
+    "category": "costruction_tools_tools",
+    "order_count": 97,
+    "total_revenue": 15903.95,
+    "review_count": 94,
+    "avg_review_score": 4.44
+  },
+  {
+    "category": "food_drink",
+    "order_count": 225,
+    "total_revenue": 15119.48,
+    "review_count": 228,
+    "avg_review_score": 4.32
+  },
+  {
+    "category": "fashion_male_clothing",
+    "order_count": 111,
+    "total_revenue": 10748.82,
+    "review_count": 111,
+    "avg_review_score": 3.64
+  },
+  {
+    "category": "fashion_underwear_beach",
+    "order_count": 121,
+    "total_revenue": 9541.55,
+    "review_count": 120,
+    "avg_review_score": 3.98
+  },
+  {
+    "category": "christmas_supplies",
+    "order_count": 127,
+    "total_revenue": 8787.83,
+    "review_count": 126,
+    "avg_review_score": 4.02
+  },
+  {
+    "category": "tablets_printing_image",
+    "order_count": 79,
+    "total_revenue": 7528.41,
+    "review_count": 77,
+    "avg_review_score": 4.12
+  },
+  {
+    "category": "cine_photo",
+    "order_count": 65,
+    "total_revenue": 6933.46,
+    "review_count": 66,
+    "avg_review_score": 4.21
+  },
+  {
+    "category": "music",
+    "order_count": 38,
+    "total_revenue": 6034.35,
+    "review_count": 38,
+    "avg_review_score": 4.21
+  },
+  {
+    "category": "books_imported",
+    "order_count": 53,
+    "total_revenue": 4639.85,
+    "review_count": 53,
+    "avg_review_score": 4.4
+  },
+  {
+    "category": "dvds_blu_ray",
+    "order_count": 57,
+    "total_revenue": 4559.49,
+    "review_count": 58,
+    "avg_review_score": 4.08
+  },
+  {
+    "category": "party_supplies",
+    "order_count": 39,
+    "total_revenue": 4485.18,
+    "review_count": 39,
+    "avg_review_score": 3.77
+  },
+  {
+    "category": "furniture_mattress_and_upholstery",
+    "order_count": 38,
+    "total_revenue": 4368.08,
+    "review_count": 38,
+    "avg_review_score": 3.82
+  },
+  {
+    "category": "portable_kitchen_and_food_preparers",
+    "order_count": 13,
+    "total_revenue": 3933.63,
+    "review_count": 14,
+    "avg_review_score": 3.27
+  },
+  {
+    "category": "fashio_female_clothing",
+    "order_count": 39,
+    "total_revenue": 2803.64,
+    "review_count": 41,
+    "avg_review_score": 3.78
+  },
+  {
+    "category": "fashion_sport",
+    "order_count": 27,
+    "total_revenue": 2119.51,
+    "review_count": 28,
+    "avg_review_score": 4.26
+  },
+  {
+    "category": "la_cuisine",
+    "order_count": 13,
+    "total_revenue": 2054.99,
+    "review_count": 12,
+    "avg_review_score": 4.0
+  },
+  {
+    "category": "arts_and_craftmanship",
+    "order_count": 23,
+    "total_revenue": 1814.01,
+    "review_count": 23,
+    "avg_review_score": 4.13
+  },
+  {
+    "category": "diapers_and_hygiene",
+    "order_count": 26,
+    "total_revenue": 1538.79,
+    "review_count": 27,
+    "avg_review_score": 3.26
+  },
+  {
+    "category": "pc_gamer",
+    "order_count": 7,
+    "total_revenue": 1306.95,
+    "review_count": 8,
+    "avg_review_score": 3.33
+  },
+  {
+    "category": "flowers",
+    "order_count": 29,
+    "total_revenue": 1110.04,
+    "review_count": 28,
+    "avg_review_score": 4.42
+  },
+  {
+    "category": "home_comfort_2",
+    "order_count": 24,
+    "total_revenue": 760.27,
+    "review_count": 23,
+    "avg_review_score": 3.63
+  },
+  {
+    "category": "cds_dvds_musicals",
+    "order_count": 12,
+    "total_revenue": 730.0,
+    "review_count": 12,
+    "avg_review_score": 4.64
+  },
+  {
+    "category": "fashion_childrens_clothes",
+    "order_count": 8,
+    "total_revenue": 569.85,
+    "review_count": 8,
+    "avg_review_score": 4.5
+  },
+  {
+    "category": "security_and_services",
+    "order_count": 2,
+    "total_revenue": 283.29,
+    "review_count": 2,
+    "avg_review_score": 2.5
+  }
+]

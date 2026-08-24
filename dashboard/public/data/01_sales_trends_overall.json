@@ -1,0 +1,122 @@
+[
+  {
+    "month": "2016-09-01T00:00:00",
+    "order_count": 2,
+    "total_revenue": 207.86
+  },
+  {
+    "month": "2016-10-01T00:00:00",
+    "order_count": 290,
+    "total_revenue": 44507.3
+  },
+  {
+    "month": "2016-12-01T00:00:00",
+    "order_count": 1,
+    "total_revenue": 10.9
+  },
+  {
+    "month": "2017-01-01T00:00:00",
+    "order_count": 787,
+    "total_revenue": 120098.27
+  },
+  {
+    "month": "2017-02-01T00:00:00",
+    "order_count": 1718,
+    "total_revenue": 244959.35
+  },
+  {
+    "month": "2017-03-01T00:00:00",
+    "order_count": 2617,
+    "total_revenue": 368341.32
+  },
+  {
+    "month": "2017-04-01T00:00:00",
+    "order_count": 2377,
+    "total_revenue": 353842.98
+  },
+  {
+    "month": "2017-05-01T00:00:00",
+    "order_count": 3640,
+    "total_revenue": 503159.19
+  },
+  {
+    "month": "2017-06-01T00:00:00",
+    "order_count": 3205,
+    "total_revenue": 429916.61
+  },
+  {
+    "month": "2017-07-01T00:00:00",
+    "order_count": 3946,
+    "total_revenue": 492287.3
+  },
+  {
+    "month": "2017-08-01T00:00:00",
+    "order_count": 4272,
+    "total_revenue": 568245.79
+  },
+  {
+    "month": "2017-09-01T00:00:00",
+    "order_count": 4227,
+    "total_revenue": 621415.91
+  },
+  {
+    "month": "2017-10-01T00:00:00",
+    "order_count": 4547,
+    "total_revenue": 660179.62
+  },
+  {
+    "month": "2017-11-01T00:00:00",
+    "order_count": 7421,
+    "total_revenue": 1003862.14
+  },
+  {
+    "month": "2017-12-01T00:00:00",
+    "order_count": 5618,
+    "total_revenue": 742183.79
+  },
+  {
+    "month": "2018-01-01T00:00:00",
+    "order_count": 7187,
+    "total_revenue": 945456.29
+  },
+  {
+    "month": "2018-02-01T00:00:00",
+    "order_count": 6624,
+    "total_revenue": 837895.43
+  },
+  {
+    "month": "2018-03-01T00:00:00",
+    "order_count": 7168,
+    "total_revenue": 981051.06
+  },
+  {
+    "month": "2018-04-01T00:00:00",
+    "order_count": 6919,
+    "total_revenue": 993592.98
+  },
+  {
+    "month": "2018-05-01T00:00:00",
+    "order_count": 6833,
+    "total_revenue": 992871.75
+  },
+  {
+    "month": "2018-06-01T00:00:00",
+    "order_count": 6145,
+    "total_revenue": 863265.53
+  },
+  {
+    "month": "2018-07-01T00:00:00",
+    "order_count": 6233,
+    "total_revenue": 878044.27
+  },
+  {
+    "month": "2018-08-01T00:00:00",
+    "order_count": 6421,
+    "total_revenue": 848860.1
+  },
+  {
+    "month": "2018-09-01T00:00:00",
+    "order_count": 1,
+    "total_revenue": 145.0
+  }
+]

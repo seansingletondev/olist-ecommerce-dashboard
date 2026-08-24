@@ -1,0 +1,137 @@
+[
+  {
+    "state": "SP",
+    "order_count": 40494,
+    "avg_delivery_days": 8.8
+  },
+  {
+    "state": "RJ",
+    "order_count": 12350,
+    "avg_delivery_days": 15.3
+  },
+  {
+    "state": "MG",
+    "order_count": 11354,
+    "avg_delivery_days": 12.0
+  },
+  {
+    "state": "RS",
+    "order_count": 5344,
+    "avg_delivery_days": 15.3
+  },
+  {
+    "state": "PR",
+    "order_count": 4923,
+    "avg_delivery_days": 12.0
+  },
+  {
+    "state": "SC",
+    "order_count": 3546,
+    "avg_delivery_days": 15.0
+  },
+  {
+    "state": "BA",
+    "order_count": 3256,
+    "avg_delivery_days": 19.3
+  },
+  {
+    "state": "DF",
+    "order_count": 2080,
+    "avg_delivery_days": 13.0
+  },
+  {
+    "state": "ES",
+    "order_count": 1995,
+    "avg_delivery_days": 15.8
+  },
+  {
+    "state": "GO",
+    "order_count": 1957,
+    "avg_delivery_days": 15.6
+  },
+  {
+    "state": "PE",
+    "order_count": 1593,
+    "avg_delivery_days": 18.4
+  },
+  {
+    "state": "CE",
+    "order_count": 1279,
+    "avg_delivery_days": 21.3
+  },
+  {
+    "state": "PA",
+    "order_count": 946,
+    "avg_delivery_days": 23.8
+  },
+  {
+    "state": "MT",
+    "order_count": 886,
+    "avg_delivery_days": 18.1
+  },
+  {
+    "state": "MA",
+    "order_count": 717,
+    "avg_delivery_days": 21.6
+  },
+  {
+    "state": "MS",
+    "order_count": 701,
+    "avg_delivery_days": 15.6
+  },
+  {
+    "state": "PB",
+    "order_count": 517,
+    "avg_delivery_days": 20.4
+  },
+  {
+    "state": "PI",
+    "order_count": 476,
+    "avg_delivery_days": 19.5
+  },
+  {
+    "state": "RN",
+    "order_count": 474,
+    "avg_delivery_days": 19.3
+  },
+  {
+    "state": "AL",
+    "order_count": 397,
+    "avg_delivery_days": 24.5
+  },
+  {
+    "state": "SE",
+    "order_count": 335,
+    "avg_delivery_days": 21.5
+  },
+  {
+    "state": "TO",
+    "order_count": 274,
+    "avg_delivery_days": 17.7
+  },
+  {
+    "state": "RO",
+    "order_count": 243,
+    "avg_delivery_days": 19.4
+  },
+  {
+    "state": "AM",
+    "order_count": 145,
+    "avg_delivery_days": 26.4
+  },
+  {
+    "state": "AC",
+    "order_count": 80,
+    "avg_delivery_days": 21.0
+  },
+  {
+    "state": "AP",
+    "order_count": 67,
+    "avg_delivery_days": 27.2
+  },
+  {
+    "state": "RR",
+    "order_count": 41,
+    "avg_delivery_days": 29.4
+  }
+]

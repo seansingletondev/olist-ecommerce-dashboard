@@ -1,0 +1,308 @@
+[
+  {
+    "category": "bed_bath_table",
+    "review_count": 9295,
+    "avg_score_on_time": 4.05,
+    "avg_score_late": 2.5
+  },
+  {
+    "category": "health_beauty",
+    "review_count": 8654,
+    "avg_score_on_time": 4.34,
+    "avg_score_late": 2.61
+  },
+  {
+    "category": "sports_leisure",
+    "review_count": 7536,
+    "avg_score_on_time": 4.3,
+    "avg_score_late": 2.48
+  },
+  {
+    "category": "computers_accessories",
+    "review_count": 6548,
+    "avg_score_on_time": 4.1,
+    "avg_score_late": 2.56
+  },
+  {
+    "category": "furniture_decor",
+    "review_count": 6317,
+    "avg_score_on_time": 4.08,
+    "avg_score_late": 2.56
+  },
+  {
+    "category": "housewares",
+    "review_count": 5730,
+    "avg_score_on_time": 4.2,
+    "avg_score_late": 2.69
+  },
+  {
+    "category": "watches_gifts",
+    "review_count": 5462,
+    "avg_score_on_time": 4.22,
+    "avg_score_late": 2.4
+  },
+  {
+    "category": "telephony",
+    "review_count": 4073,
+    "avg_score_on_time": 4.12,
+    "avg_score_late": 2.62
+  },
+  {
+    "category": "auto",
+    "review_count": 3807,
+    "avg_score_on_time": 4.25,
+    "avg_score_late": 2.62
+  },
+  {
+    "category": "toys",
+    "review_count": 3781,
+    "avg_score_on_time": 4.35,
+    "avg_score_late": 2.39
+  },
+  {
+    "category": "cool_stuff",
+    "review_count": 3540,
+    "avg_score_on_time": 4.32,
+    "avg_score_late": 2.48
+  },
+  {
+    "category": "garden_tools",
+    "review_count": 3438,
+    "avg_score_on_time": 4.21,
+    "avg_score_late": 2.57
+  },
+  {
+    "category": "perfumery",
+    "review_count": 3090,
+    "avg_score_on_time": 4.35,
+    "avg_score_late": 2.5
+  },
+  {
+    "category": "baby",
+    "review_count": 2795,
+    "avg_score_on_time": 4.24,
+    "avg_score_late": 2.33
+  },
+  {
+    "category": "electronics",
+    "review_count": 2499,
+    "avg_score_on_time": 4.21,
+    "avg_score_late": 2.74
+  },
+  {
+    "category": "stationery",
+    "review_count": 2258,
+    "avg_score_on_time": 4.4,
+    "avg_score_late": 2.48
+  },
+  {
+    "category": "fashion_bags_accessories",
+    "review_count": 1827,
+    "avg_score_on_time": 4.31,
+    "avg_score_late": 2.43
+  },
+  {
+    "category": "pet_shop",
+    "review_count": 1682,
+    "avg_score_on_time": 4.32,
+    "avg_score_late": 2.65
+  },
+  {
+    "category": "office_furniture",
+    "review_count": 1249,
+    "avg_score_on_time": 3.62,
+    "avg_score_late": 2.48
+  },
+  {
+    "category": "luggage_accessories",
+    "review_count": 1015,
+    "avg_score_on_time": 4.43,
+    "avg_score_late": 2.98
+  },
+  {
+    "category": "consoles_games",
+    "review_count": 1010,
+    "avg_score_on_time": 4.26,
+    "avg_score_late": 2.65
+  },
+  {
+    "category": "home_appliances",
+    "review_count": 782,
+    "avg_score_on_time": 4.32,
+    "avg_score_late": 2.94
+  },
+  {
+    "category": "construction_tools_construction",
+    "review_count": 732,
+    "avg_score_on_time": 4.22,
+    "avg_score_late": 2.61
+  },
+  {
+    "category": "small_appliances",
+    "review_count": 608,
+    "avg_score_on_time": 4.32,
+    "avg_score_late": 2.76
+  },
+  {
+    "category": "musical_instruments",
+    "review_count": 606,
+    "avg_score_on_time": 4.42,
+    "avg_score_late": 2.14
+  },
+  {
+    "category": "books_general_interest",
+    "review_count": 491,
+    "avg_score_on_time": 4.6,
+    "avg_score_late": 3.18
+  },
+  {
+    "category": "home_construction",
+    "review_count": 482,
+    "avg_score_on_time": 4.07,
+    "avg_score_late": 2.78
+  },
+  {
+    "category": "food",
+    "review_count": 437,
+    "avg_score_on_time": 4.39,
+    "avg_score_late": 3.06
+  },
+  {
+    "category": "furniture_living_room",
+    "review_count": 412,
+    "avg_score_on_time": 4.07,
+    "avg_score_late": 2.29
+  },
+  {
+    "category": "home_confort",
+    "review_count": 393,
+    "avg_score_on_time": 4.01,
+    "avg_score_late": 2.5
+  },
+  {
+    "category": "audio",
+    "review_count": 346,
+    "avg_score_on_time": 4.1,
+    "avg_score_late": 1.96
+  },
+  {
+    "category": "drinks",
+    "review_count": 288,
+    "avg_score_on_time": 4.23,
+    "avg_score_late": 2.35
+  },
+  {
+    "category": "market_place",
+    "review_count": 272,
+    "avg_score_on_time": 4.13,
+    "avg_score_late": 2.77
+  },
+  {
+    "category": "books_technical",
+    "review_count": 257,
+    "avg_score_on_time": 4.49,
+    "avg_score_late": 3.66
+  },
+  {
+    "category": "air_conditioning",
+    "review_count": 242,
+    "avg_score_on_time": 4.13,
+    "avg_score_late": 2.0
+  },
+  {
+    "category": "construction_tools_lights",
+    "review_count": 240,
+    "avg_score_on_time": 4.18,
+    "avg_score_late": 3.23
+  },
+  {
+    "category": "kitchen_dining_laundry_garden_furniture",
+    "review_count": 239,
+    "avg_score_on_time": 4.12,
+    "avg_score_late": 2.08
+  },
+  {
+    "category": "fashion_shoes",
+    "review_count": 234,
+    "avg_score_on_time": 4.4,
+    "avg_score_late": 2.4
+  },
+  {
+    "category": "industry_commerce_and_business",
+    "review_count": 230,
+    "avg_score_on_time": 4.21,
+    "avg_score_late": 2.94
+  },
+  {
+    "category": "home_appliances_2",
+    "review_count": 228,
+    "avg_score_on_time": 4.31,
+    "avg_score_late": 2.13
+  },
+  {
+    "category": "food_drink",
+    "review_count": 223,
+    "avg_score_on_time": 4.48,
+    "avg_score_late": 2.71
+  },
+  {
+    "category": "fixed_telephony",
+    "review_count": 210,
+    "avg_score_on_time": 3.82,
+    "avg_score_late": 2.2
+  },
+  {
+    "category": "art",
+    "review_count": 193,
+    "avg_score_on_time": 4.17,
+    "avg_score_late": 3.0
+  },
+  {
+    "category": "costruction_tools_garden",
+    "review_count": 192,
+    "avg_score_on_time": 4.2,
+    "avg_score_late": 3.18
+  },
+  {
+    "category": "agro_industry_and_commerce",
+    "review_count": 177,
+    "avg_score_on_time": 4.16,
+    "avg_score_late": 2.44
+  },
+  {
+    "category": "computers",
+    "review_count": 174,
+    "avg_score_on_time": 4.33,
+    "avg_score_late": 2.36
+  },
+  {
+    "category": "construction_tools_safety",
+    "review_count": 158,
+    "avg_score_on_time": 4.04,
+    "avg_score_late": 2.7
+  },
+  {
+    "category": "signaling_and_security",
+    "review_count": 137,
+    "avg_score_on_time": 4.17,
+    "avg_score_late": 2.6
+  },
+  {
+    "category": "christmas_supplies",
+    "review_count": 123,
+    "avg_score_on_time": 4.21,
+    "avg_score_late": 2.58
+  },
+  {
+    "category": "fashion_underwear_beach",
+    "review_count": 116,
+    "avg_score_on_time": 4.35,
+    "avg_score_late": 2.0
+  },
+  {
+    "category": "fashion_male_clothing",
+    "review_count": 105,
+    "avg_score_on_time": 3.86,
+    "avg_score_late": 1.67
+  }
+]
