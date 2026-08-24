@@ -1,6 +1,10 @@
 # Secrets -- never commit real credentials. Only .env.example (no secrets) is tracked.
 .env
 
+# Personal working notes from debugging sessions -- not part of the polished
+# project history.
+SESSION_NOTES.txt
+
 # Raw Kaggle data -- re-downloadable, kept out of git to keep the repo small.
 # See datasets/README.md for the source link.
 datasets/*.csv

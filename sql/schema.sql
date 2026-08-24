@@ -225,4 +225,3 @@ CREATE TABLE geolocation (
 );
 
 CREATE INDEX idx_geolocation_zip ON geolocation (geolocation_zip_code_prefix);
-</content>

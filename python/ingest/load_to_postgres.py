@@ -157,6 +157,22 @@ def load_sellers() -> None:
 
 def load_category_translation() -> None:
     df = read_csv("product_category_name_translation.csv")
+
+    # The source translation file is missing an English translation for 2 of
+    # the 73 category names actually used in olist_products_dataset.csv --
+    # a real gap in the raw Kaggle data, confirmed by comparing the two
+    # files' category sets (13 of 32,951 products use one of these two).
+    # Without adding these rows, products.py's foreign key into this table
+    # would reject those 13 rows outright. Appending them here keeps the
+    # category info for those products instead of discarding it.
+    missing_translations = pd.DataFrame([
+        {"product_category_name": "pc_gamer",
+         "product_category_name_english": "pc_gamer"},
+        {"product_category_name": "portateis_cozinha_e_preparadores_de_alimentos",
+         "product_category_name_english": "portable_kitchen_and_food_preparers"},
+    ])
+    df = pd.concat([df, missing_translations], ignore_index=True)
+
     load_table(clean_for_insert(df), "product_category_translation")
 
 
@@ -293,11 +309,17 @@ def reset_tables() -> None:
         # `with` block in a single transaction: if any statement below
         # fails, every TRUNCATE in this block is rolled back together rather
         # than leaving the database half-emptied.
-        for table in TABLES_NEWEST_FIRST:
-            # TRUNCATE empties a table (like DELETE with no WHERE clause) but
-            # is much faster for large tables, since it doesn't log every
-            # individual row deletion the way DELETE does.
-            conn.execute(text(f"TRUNCATE TABLE {table}"))
+        #
+        # TRUNCATE empties a table (like DELETE with no WHERE clause) but is
+        # much faster for large tables, since it doesn't log every individual
+        # row deletion the way DELETE does. All 9 tables are listed in ONE
+        # TRUNCATE statement (rather than one statement per table) because
+        # Postgres refuses to truncate a table that's still referenced by a
+        # foreign key from another table -- even if that other table was
+        # truncated earlier in the same transaction. Listing every related
+        # table together in a single statement truncates them all atomically,
+        # sidestepping that restriction entirely.
+        conn.execute(text(f"TRUNCATE TABLE {', '.join(TABLES_NEWEST_FIRST)}"))
     print("  done.")
 
 
