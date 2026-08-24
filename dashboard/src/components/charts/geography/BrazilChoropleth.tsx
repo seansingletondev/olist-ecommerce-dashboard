@@ -2,7 +2,6 @@ import { geoMercator, geoPath } from "d3";
 import { useMemo, useState } from "react";
 import { feature } from "topojson-client";
 import type { Topology, GeometryCollection } from "topojson-specification";
-import topoData from "../../../assets/br-states-topo.json";
 import { useJsonData } from "../../../lib/useJsonData";
 import { useContainerWidth } from "../../../lib/useContainerWidth";
 import { sequentialScale } from "../../../lib/colorScales";
@@ -23,12 +22,21 @@ const METRIC_LABEL: Record<Metric, string> = {
   avg_delivery_days: "Avg. delivery time (days)",
 };
 
-const topology = topoData as unknown as Topology;
-const geometryObject = topology.objects.br_states_raw as GeometryCollection<StateProperties>;
-const statesGeoJson = feature(topology, geometryObject);
-
 export function BrazilChoropleth() {
   const { data } = useJsonData<GeographicBreakdownRow[]>("/data/02_geographic_breakdown.json");
+  // Fetched at runtime (public/geo/) rather than statically imported --
+  // a static `import topoJson from "...json"` gets INLINED into the JS
+  // bundle by Vite, which blew the bundle up by this file's full 256KB and
+  // made the browser parse/eval it as JS before the app could even render.
+  // Fetching it exactly like the other public/data/*.json files lets the
+  // browser download and cache it as a separate, parallelizable request.
+  const { data: topoData } = useJsonData<Topology>("/geo/br-states-topo.json");
+
+  const statesGeoJson = useMemo(() => {
+    if (!topoData) return null;
+    const geometryObject = topoData.objects.br_states_raw as GeometryCollection<StateProperties>;
+    return feature(topoData, geometryObject);
+  }, [topoData]);
   // `ref` must land on ONE stable element that's present in every render of
   // this component -- useContainerWidth's ResizeObserver is created once,
   // on mount, and keeps watching whatever DOM node `ref.current` pointed to
@@ -48,12 +56,15 @@ export function BrazilChoropleth() {
   }, [data]);
 
   const path = useMemo(() => {
-    if (width === 0) return null;
+    if (width === 0 || !statesGeoJson) return null;
     const projection = geoMercator().fitWidth(width, statesGeoJson);
     return geoPath(projection);
-  }, [width]);
+  }, [width, statesGeoJson]);
 
-  const bounds = useMemo(() => (path ? path.bounds(statesGeoJson) : null), [path]);
+  const bounds = useMemo(
+    () => (path && statesGeoJson ? path.bounds(statesGeoJson) : null),
+    [path, statesGeoJson],
+  );
 
   // Computing a path's `d` string walks every point in that state's
   // geometry (thousands of points combined across all 27 states) -- doing
@@ -63,13 +74,13 @@ export function BrazilChoropleth() {
   // Memoizing on `path` alone means this only reruns when the container is
   // resized, not on every hover-driven re-render.
   const renderedStates = useMemo(() => {
-    if (!path) return [];
+    if (!path || !statesGeoJson) return [];
     return statesGeoJson.features.map((f) => ({
       sigla: f.properties.SIGLA,
       estado: f.properties.Estado,
       d: path(f) ?? undefined,
     }));
-  }, [path]);
+  }, [path, statesGeoJson]);
 
   const colorScale = useMemo(() => {
     const values = (data ?? []).map((row) => row[metric]);
