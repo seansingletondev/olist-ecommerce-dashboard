@@ -33,13 +33,11 @@ export function SegmentShareBar() {
 
   const hovered = ordered.find((r) => r.segment === hoveredSegment);
 
-  let cursor = 0;
-  const segments = ordered.map((row) => {
-    const w = total > 0 ? ((row.customer_count / total) * width) : 0;
-    const seg = { row, xStart: cursor, w };
-    cursor += w;
-    return seg;
-  });
+  const segments = ordered.reduce<{ row: RfmSummaryRow; xStart: number; w: number }[]>((acc, row) => {
+    const xStart = acc.length > 0 ? acc[acc.length - 1].xStart + acc[acc.length - 1].w : 0;
+    const w = total > 0 ? (row.customer_count / total) * width : 0;
+    return [...acc, { row, xStart, w }];
+  }, []);
 
   const tableView = (
     <table style={{ width: "100%", fontSize: 13, borderCollapse: "collapse" }}>
