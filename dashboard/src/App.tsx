@@ -3,6 +3,8 @@ import { OverviewKpis } from "./components/overview/OverviewKpis";
 import { BrazilChoropleth } from "./components/charts/geography/BrazilChoropleth";
 import { SalesTrendLine } from "./components/charts/sales/SalesTrendLine";
 import { CategoryRevenueStack } from "./components/charts/sales/CategoryRevenueStack";
+import { DeliveryStateBar } from "./components/charts/delivery/DeliveryStateBar";
+import { DeliverySellerBar } from "./components/charts/delivery/DeliverySellerBar";
 import styles from "./App.module.css";
 
 function Placeholder({ label }: { label: string }) {
@@ -49,8 +51,8 @@ function App() {
       </Section>
 
       <Section id="delivery" title="Delivery performance" columns={2}>
-        <Placeholder label="By-state bar — built in step 7" />
-        <Placeholder label="Worst sellers bar — built in step 7" />
+        <DeliveryStateBar />
+        <DeliverySellerBar />
       </Section>
 
       <Section id="reviews" title="Reviews" columns={2}>
