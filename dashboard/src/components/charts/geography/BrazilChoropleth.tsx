@@ -123,6 +123,16 @@ export function BrazilChoropleth() {
       title="Order volume & delivery time by state"
       subtitle="Hover a state for details. Toggle the metric mapped to color."
       tableView={tableView}
+      insight={
+        <>
+          Each state is shaded by whichever metric is selected above — darker means more orders
+          (or, once toggled, a longer average delivery time). São Paulo alone accounts for over
+          40% of every order in this dataset and also has the shortest average delivery time, a
+          scale advantage from being Brazil's commercial and logistics hub. Toggle to delivery
+          time and the pattern flips geographically: the further a state sits from the Southeast,
+          the longer deliveries take, tracking Brazil's real transportation infrastructure.
+        </>
+      }
     >
       <div className={styles.toolbar}>
         <div className={styles.toggle} role="group" aria-label="Map metric">

@@ -60,6 +60,16 @@ export function DeliveryStateBar() {
       title="Late deliveries by state"
       subtitle="Share of delivered orders that arrived after the estimate, by customer state"
       tableView={tableView}
+      insight={
+        <>
+          "Late" means the order arrived after the date Olist originally promised the customer.
+          The states with the longest absolute delivery times — remote, Amazon-region states like
+          Roraima and Amapá — actually have some of the lowest late-delivery rates: Olist's
+          estimates already build in generous buffers for distance, so these orders take longer
+          in real time but are more likely to arrive within their (longer) promised window than
+          orders to closer, more tightly-estimated states.
+        </>
+      }
     >
       <HorizontalBarChart items={items} formatValue={formatPercent} />
     </ChartCard>

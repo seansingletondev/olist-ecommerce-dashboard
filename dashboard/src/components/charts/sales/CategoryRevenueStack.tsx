@@ -119,6 +119,14 @@ export function CategoryRevenueStack() {
       title="Revenue by category"
       subtitle="Top 5 categories by total revenue, remaining categories folded into Other"
       tableView={tableView}
+      insight={
+        <>
+          Each colored band is one product category; at any point on the timeline, the bands
+          stack up to that month's total revenue. Health & beauty, watches & gifts, and
+          bed/bath/table have stayed the top revenue categories nearly every month since the
+          marketplace matured in 2017 — a remarkably stable ranking even as total volume grows.
+        </>
+      }
     >
       <Legend items={legendItems} />
       <div ref={ref} className={styles.chartWrap}>

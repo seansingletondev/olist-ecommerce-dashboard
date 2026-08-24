@@ -74,6 +74,14 @@ export function ReviewDelayBar() {
       title="Review score by delivery delay"
       subtitle="Average review score (1-5), by how late the delivery was"
       tableView={tableView}
+      insight={
+        <>
+          Review scores fall off a cliff the moment a delivery is even a few days late — from
+          4.29 for on-time orders to 2.32 once it's 4-7 days late — then largely flatten out. Once
+          a delivery is badly late, exactly how late it is stops mattering much to the customer;
+          the damage to the review is already done.
+        </>
+      }
     >
       <HorizontalBarChart items={items} formatValue={(v) => v.toFixed(2)} domainMax={5} />
     </ChartCard>

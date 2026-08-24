@@ -58,6 +58,16 @@ export function CategoryBubble() {
     <ChartCard
       title="Category performance: revenue vs. review score"
       subtitle="Top 25 categories by revenue. Bubble size = order volume. Full list in the table below."
+      insight={
+        <>
+          Each bubble is one product category: its position left-to-right is total revenue,
+          up-and-down is average review score, and its size is order volume. Revenue is heavily
+          concentrated in a handful of categories, but review scores stay fairly uniform across
+          nearly all of them — a top-revenue category isn't necessarily a better-reviewed one.
+          Office furniture stands out as a real outlier: real order volume, but the lowest average
+          review score of any major category.
+        </>
+      }
     >
       <div ref={ref} style={{ position: "relative", width: "100%" }}>
         {x && y && r && (

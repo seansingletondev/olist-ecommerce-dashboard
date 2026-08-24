@@ -41,6 +41,16 @@ export function SegmentMetricBars() {
     <ChartCard
       title="Recency & spend by segment"
       subtitle="Average days since last order, and average lifetime spend, per segment"
+      insight={
+        <>
+          Champion and Hibernating customers (see the segment definitions above) differ enormously
+          in recency — 158 days since their last order versus 421 — and in total spend, R$332
+          versus R$33. What barely moves between them is order frequency: even Champions average
+          only about one order each. That's a real property of this dataset, not a measurement
+          gap — most customers here, Champions included, are one-time buyers, so recency and spend
+          carry the real signal, not how often someone orders.
+        </>
+      }
     >
       <p style={{ fontSize: 12, color: "var(--text-muted)", margin: "0 0 6px" }}>Avg. days since last order</p>
       <HorizontalBarChart items={recencyItems} formatValue={(v) => `${Math.round(v)}d`} />

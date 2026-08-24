@@ -1,4 +1,5 @@
 import { useState, type ReactNode } from "react";
+import { InsightNote } from "./InsightNote";
 import styles from "./ChartCard.module.css";
 
 interface ChartCardProps {
@@ -12,10 +13,12 @@ interface ChartCardProps {
    * a bare stat tile should supply one (dataviz skill accessibility rule).
    */
   tableView?: ReactNode;
+  /** "What can you learn from this" -- rendered as a labeled InsightNote below the chart. */
+  insight?: ReactNode;
   footnote?: string;
 }
 
-export function ChartCard({ title, subtitle, children, tableView, footnote }: ChartCardProps) {
+export function ChartCard({ title, subtitle, children, tableView, insight, footnote }: ChartCardProps) {
   const [showTable, setShowTable] = useState(false);
 
   return (
@@ -37,6 +40,7 @@ export function ChartCard({ title, subtitle, children, tableView, footnote }: Ch
         )}
       </div>
       <div className={styles.body}>{showTable && tableView ? tableView : children}</div>
+      {insight && <InsightNote>{insight}</InsightNote>}
       {footnote && <figcaption className={styles.footnote}>{footnote}</figcaption>}
     </figure>
   );

@@ -1,6 +1,7 @@
 import { useJsonData } from "../../lib/useJsonData";
 import { formatCount, formatCurrencyCompact, formatPercent } from "../../lib/format";
 import { KpiRow, StatTile } from "../layout/StatTile";
+import { InsightNote } from "../layout/InsightNote";
 import type {
   DeliveryPerformanceOverallRow,
   ReviewAnalysisByDelayRow,
@@ -39,11 +40,21 @@ export function OverviewKpis() {
   const avgReviewScore = reviewCount > 0 ? reviewWeightedSum / reviewCount : 0;
 
   return (
-    <KpiRow>
-      <StatTile label="Total revenue" value={formatCurrencyCompact(totalRevenue)} />
-      <StatTile label="Total orders" value={formatCount(totalOrders)} />
-      <StatTile label="Late deliveries" value={formatPercent(pctLate)} />
-      <StatTile label="Avg. review score" value={`${avgReviewScore.toFixed(2)} / 5`} />
-    </KpiRow>
+    <>
+      <KpiRow>
+        <StatTile label="Total revenue" value={formatCurrencyCompact(totalRevenue)} />
+        <StatTile label="Total orders" value={formatCount(totalOrders)} />
+        <StatTile label="Late deliveries" value={formatPercent(pctLate)} />
+        <StatTile label="Avg. review score" value={`${avgReviewScore.toFixed(2)} / 5`} />
+      </KpiRow>
+      <InsightNote>
+        R$13.5M in revenue across roughly 98K orders between September 2016 and September 2018
+        (the export cuts off mid-month) works out to about R$137 per order. The 8.1% late-delivery
+        rate is the share of orders that arrived after the date Olist promised the customer, and
+        4.15/5 is the average star rating customers left afterward — both suggest the overall
+        experience is solid, but the sections below show that average hides sharp differences by
+        state, seller, and how late a delivery actually was.
+      </InsightNote>
+    </>
   );
 }

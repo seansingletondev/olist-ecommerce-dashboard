@@ -65,6 +65,20 @@ export function SegmentShareBar() {
       title="Customers by segment"
       subtitle={`${formatCount(total)} customers scored on Recency, Frequency, and Monetary value`}
       tableView={tableView}
+      insight={
+        <>
+          This section scores every customer on three dimensions — Recency (how long since their
+          last order), Frequency (how many orders they've placed), and Monetary value (how much
+          they've spent) — together called RFM analysis, a standard way of grouping customers by
+          actual buying behavior instead of guesswork. Champions score well across all three;
+          Loyal customers are solid, dependable buyers a step behind; At risk customers haven't
+          ordered in a while and may be drifting away; Hibernating customers have gone the longest
+          without ordering and are effectively inactive. Only about 16% of customers qualify as
+          Champions, while nearly 40% have drifted into At risk — a reminder that most of this
+          marketplace is built on customers who bought once and never came back, not repeat
+          buyers.
+        </>
+      }
     >
       <div ref={ref} style={{ position: "relative", width: "100%" }}>
         {width > 0 && (

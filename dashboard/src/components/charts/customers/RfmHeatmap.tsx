@@ -69,6 +69,16 @@ export function RfmHeatmap() {
       title="Customers by recency & spend quintile"
       subtitle="1 = least recent / lowest spend, 5 = most recent / highest spend"
       tableView={tableView}
+      insight={
+        <>
+          Both axes split customers into five equal-sized groups — quintiles — from lowest to
+          highest: R1 is the least-recently-active fifth of customers and R5 the most recent,
+          while M1 is the lowest-spending fifth and M5 the highest. Customer counts spread fairly
+          evenly across most recency-spend combinations rather than clustering in one dominant
+          cell — there's no single "typical" Olist customer profile, which is exactly why scoring
+          on multiple dimensions is more useful here than looking at any one metric alone.
+        </>
+      }
     >
       <div style={{ marginBottom: 10 }}>
         <ScaleLegend minLabel="Fewer customers" maxLabel="More customers" fromColor={sequentialBlue[150]} toColor={sequentialBlue[650]} />

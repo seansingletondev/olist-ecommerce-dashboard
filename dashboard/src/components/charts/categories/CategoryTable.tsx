@@ -54,7 +54,18 @@ export function CategoryTable() {
   };
 
   return (
-    <ChartCard title="All categories" subtitle={`${data.length} product categories, click a column to sort`}>
+    <ChartCard
+      title="All categories"
+      subtitle={`${data.length} product categories, click a column to sort`}
+      insight={
+        <>
+          Beyond the top 25 shown in the bubble chart above, the long tail of niche categories
+          still holds real signal — several of the highest average review scores in the entire
+          dataset actually belong to small, low-volume categories like <code>cds_dvds_musicals</code>{" "}
+          and <code>flowers</code>, not the big sellers.
+        </>
+      }
+    >
       <div className={styles.scrollWrap}>
         <table className={styles.table}>
           <thead>

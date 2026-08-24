@@ -75,6 +75,16 @@ export function ReviewDumbbell() {
       title="Review score: on-time vs. late, by category"
       subtitle={`Top ${TOP_N} categories by score gap (view as table for all ${data.length})`}
       tableView={tableView}
+      insight={
+        <>
+          Each row is one product category: the light dot marks the average review score when the
+          delivery was on time or early, the dark dot marks it when the delivery was late, and the
+          line between them is the size of that gap. On-time orders outscore late ones in every
+          single category shown, with no exceptions — confirming the delivery-delay penalty on
+          reviews is a universal effect of the experience itself, not something specific to any
+          one kind of product.
+        </>
+      }
     >
       <div className={styles.legend}>
         <span className={styles.legendItem}>

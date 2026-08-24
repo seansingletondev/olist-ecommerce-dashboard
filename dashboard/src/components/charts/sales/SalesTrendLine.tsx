@@ -83,6 +83,15 @@ export function SalesTrendLine() {
       title="Monthly revenue"
       subtitle="Total order revenue by month, 2016-2018"
       tableView={tableView}
+      insight={
+        <>
+          Revenue climbed steadily through 2017 before spiking sharply in November — Black
+          Friday, the biggest single shopping event on the Brazilian retail calendar. The trickle
+          of orders in late 2016 reflects Olist's real early-stage rollout, not missing data, and
+          the drop after August 2018 is where the public dataset's export window ends, not a real
+          collapse in sales.
+        </>
+      }
     >
       <div ref={ref} className={styles.chartWrap}>
         {x && y && innerWidth > 0 && (
