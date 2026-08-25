@@ -63,7 +63,7 @@ export function CategoryBubble() {
           Each bubble is one product category: its position left-to-right is total revenue,
           up-and-down is average review score, and its size is order volume. Revenue is heavily
           concentrated in a handful of categories, but review scores stay fairly uniform across
-          nearly all of them — a top-revenue category isn't necessarily a better-reviewed one.
+          nearly all of them. A top-revenue category isn't necessarily a better-reviewed one.
           Office furniture stands out as a real outlier: real order volume, but the lowest average
           review score of any major category.
         </>

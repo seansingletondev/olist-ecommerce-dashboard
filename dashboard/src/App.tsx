@@ -23,7 +23,7 @@ function App() {
         <p className={styles.lede}>
           A look at ~99k orders on the Olist marketplace (2016-2018): sales trends, delivery
           performance, product category performance, review sentiment, and RFM customer
-          segmentation — built on a Postgres → SQL → Python → D3 pipeline.
+          segmentation. Built on a Postgres → SQL → Python → D3 pipeline.
         </p>
       </header>
 

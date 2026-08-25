@@ -26,10 +26,23 @@ export function RfmHeatmap() {
     return map;
   }, [data]);
 
+  // Customer counts across the 25 cells are tightly clustered (roughly
+  // 3.4K-4.1K -- see the insight text below) rather than spanning from
+  // zero, so a domain of [0, max] would squeeze every real cell into a
+  // narrow high-end sliver of the ramp and make them all look like nearly
+  // the same shade. Scaling from the actual [min, max] instead stretches
+  // that same real spread across the full light-to-dark range, so the
+  // (real, if modest) differences between cells are actually visible.
+  const [minCount, maxCount] = useMemo(() => {
+    if (!data || data.length === 0) return [0, 0];
+    const counts = data.map((d) => d.customer_count);
+    return [Math.min(...counts), Math.max(...counts)];
+  }, [data]);
+
   const colorScale = useMemo(() => {
     if (!data) return null;
-    return sequentialScale([0, Math.max(...data.map((d) => d.customer_count))]);
-  }, [data]);
+    return sequentialScale([minCount, maxCount]);
+  }, [data, minCount, maxCount]);
 
   if (!data || !colorScale) {
     return (
@@ -71,11 +84,11 @@ export function RfmHeatmap() {
       tableView={tableView}
       insight={
         <>
-          Both axes split customers into five equal-sized groups — quintiles — from lowest to
+          Both axes split customers into five equal-sized groups (quintiles) from lowest to
           highest: R1 is the least-recently-active fifth of customers and R5 the most recent,
           while M1 is the lowest-spending fifth and M5 the highest. Customer counts spread fairly
           evenly across most recency-spend combinations rather than clustering in one dominant
-          cell — there's no single "typical" Olist customer profile, which is exactly why scoring
+          cell. There's no single "typical" Olist customer profile, which is exactly why scoring
           on multiple dimensions is more useful here than looking at any one metric alone.
         </>
       }
@@ -104,8 +117,7 @@ export function RfmHeatmap() {
               {[5, 4, 3, 2, 1].map((r, rowIndex) =>
                 [1, 2, 3, 4, 5].map((m, colIndex) => {
                   const count = byCell.get(`${r}-${m}`) ?? 0;
-                  const max = Math.max(...data.map((d) => d.customer_count));
-                  const t = max > 0 ? count / max : 0;
+                  const t = maxCount > minCount ? (count - minCount) / (maxCount - minCount) : 0;
                   const textColor = t > 0.5 ? "white" : "var(--text-primary)";
                   const isHovered = hoveredCell?.r === r && hoveredCell?.m === m;
                   return (

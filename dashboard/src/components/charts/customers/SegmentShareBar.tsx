@@ -68,9 +68,9 @@ export function SegmentShareBar() {
       insight={
         <>
           <p>
-            This section scores every customer on three dimensions — Recency (how long since
-            their last order), Frequency (how many orders they've placed), and Monetary value
-            (how much they've spent) — together called RFM analysis, a standard way of grouping
+            This section scores every customer on three dimensions: Recency (how long since their
+            last order), Frequency (how many orders they've placed), and Monetary value (how much
+            they've spent). Together, these are called RFM analysis, a standard way of grouping
             customers by actual buying behavior instead of guesswork:
           </p>
           <ul>
@@ -91,8 +91,8 @@ export function SegmentShareBar() {
           </ul>
           <p>
             Only about 16% of customers qualify as Champions, while nearly 40% have drifted into
-            At risk — a reminder that most of this marketplace is built on customers who bought
-            once and never came back, not repeat buyers.
+            At risk. That's a reminder that most of this marketplace is built on customers who
+            bought once and never came back, not repeat buyers.
           </p>
         </>
       }

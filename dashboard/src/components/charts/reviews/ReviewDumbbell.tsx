@@ -80,7 +80,7 @@ export function ReviewDumbbell() {
           Each row is one product category: the light dot marks the average review score when the
           delivery was on time or early, the dark dot marks it when the delivery was late, and the
           line between them is the size of that gap. On-time orders outscore late ones in every
-          single category shown, with no exceptions — confirming the delivery-delay penalty on
+          single category shown, with no exceptions. This confirms the delivery-delay penalty on
           reviews is a universal effect of the experience itself, not something specific to any
           one kind of product.
         </>

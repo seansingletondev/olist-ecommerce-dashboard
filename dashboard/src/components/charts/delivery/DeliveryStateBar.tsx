@@ -64,11 +64,11 @@ export function DeliveryStateBar() {
       insight={
         <>
           "Late" means the order arrived after the date Olist originally promised the customer.
-          The states with the longest absolute delivery times — remote, Amazon-region states like
-          Roraima and Amapá — actually have some of the lowest late-delivery rates: Olist's
-          estimates already build in generous buffers for distance, so these orders take longer
-          in real time but are more likely to arrive within their (longer) promised window than
-          orders to closer, more tightly-estimated states.
+          The states with the longest absolute delivery times are remote, Amazon-region states
+          like Roraima and Amapá. They actually have some of the lowest late-delivery rates:
+          Olist's estimates already build in generous buffers for distance, so these orders take
+          longer in real time but are more likely to arrive within their (longer) promised window
+          than orders to closer, more tightly-estimated states.
         </>
       }
     >

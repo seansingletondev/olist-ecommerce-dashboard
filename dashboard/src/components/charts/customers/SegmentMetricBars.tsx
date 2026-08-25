@@ -44,10 +44,10 @@ export function SegmentMetricBars() {
       insight={
         <>
           Champion and Hibernating customers (see the segment definitions above) differ enormously
-          in recency — 158 days since their last order versus 421 — and in total spend, R$332
+          in recency: 158 days since their last order versus 421, and in total spend, R$332
           versus R$33. What barely moves between them is order frequency: even Champions average
           only about one order each. That's a real property of this dataset, not a measurement
-          gap — most customers here, Champions included, are one-time buyers, so recency and spend
+          gap. Most customers here, Champions included, are one-time buyers, so recency and spend
           carry the real signal, not how often someone orders.
         </>
       }

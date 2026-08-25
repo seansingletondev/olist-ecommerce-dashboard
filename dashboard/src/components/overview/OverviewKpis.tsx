@@ -51,7 +51,7 @@ export function OverviewKpis() {
         R$13.5M in revenue across roughly 98K orders between September 2016 and September 2018
         (the export cuts off mid-month) works out to about R$137 per order. The 8.1% late-delivery
         rate is the share of orders that arrived after the date Olist promised the customer, and
-        4.15/5 is the average star rating customers left afterward — both suggest the overall
+        4.15/5 is the average star rating customers left afterward. Both suggest the overall
         experience is solid, but the sections below show that average hides sharp differences by
         state, seller, and how late a delivery actually was.
       </InsightNote>

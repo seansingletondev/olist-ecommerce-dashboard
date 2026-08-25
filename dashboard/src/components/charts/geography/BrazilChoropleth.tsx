@@ -139,7 +139,7 @@ export function BrazilChoropleth() {
       tableView={tableView}
       insight={
         <>
-          Each state is shaded by whichever metric is selected above — darker means more orders
+          Each state is shaded by whichever metric is selected above. Darker means more orders
           (or, once toggled, a longer average delivery time). São Paulo alone accounts for over
           40% of every order in this dataset and also has the shortest average delivery time, a
           scale advantage from being Brazil's commercial and logistics hub. Toggle to delivery

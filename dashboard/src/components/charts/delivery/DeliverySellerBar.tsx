@@ -64,7 +64,7 @@ export function DeliverySellerBar() {
       insight={
         <>
           These 20 sellers combine a genuinely high late-delivery rate (over 20%, some above 35%)
-          with enough order volume — 20+ delivered orders each — that the pattern isn't just bad
+          with enough order volume (20+ delivered orders each) that the pattern isn't just bad
           luck on a couple of shipments.
         </>
       }
