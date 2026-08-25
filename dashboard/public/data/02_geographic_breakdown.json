@@ -2,136 +2,163 @@
   {
     "state": "SP",
     "order_count": 40494,
-    "avg_delivery_days": 8.8
+    "avg_delivery_days": 8.8,
+    "total_revenue": 5163867.22
   },
   {
     "state": "RJ",
     "order_count": 12350,
-    "avg_delivery_days": 15.3
+    "avg_delivery_days": 15.3,
+    "total_revenue": 1811623.42
   },
   {
     "state": "MG",
     "order_count": 11354,
-    "avg_delivery_days": 12.0
+    "avg_delivery_days": 12.0,
+    "total_revenue": 1573508.2
   },
   {
     "state": "RS",
     "order_count": 5344,
-    "avg_delivery_days": 15.3
+    "avg_delivery_days": 15.3,
+    "total_revenue": 742559.78
   },
   {
     "state": "PR",
     "order_count": 4923,
-    "avg_delivery_days": 12.0
+    "avg_delivery_days": 12.0,
+    "total_revenue": 676883.06
   },
   {
     "state": "SC",
     "order_count": 3546,
-    "avg_delivery_days": 15.0
+    "avg_delivery_days": 15.0,
+    "total_revenue": 518578.28
   },
   {
     "state": "BA",
     "order_count": 3256,
-    "avg_delivery_days": 19.3
+    "avg_delivery_days": 19.3,
+    "total_revenue": 507108.83
   },
   {
     "state": "DF",
     "order_count": 2080,
-    "avg_delivery_days": 13.0
+    "avg_delivery_days": 13.0,
+    "total_revenue": 300886.45
   },
   {
     "state": "ES",
     "order_count": 1995,
-    "avg_delivery_days": 15.8
+    "avg_delivery_days": 15.8,
+    "total_revenue": 273532.13
   },
   {
     "state": "GO",
     "order_count": 1957,
-    "avg_delivery_days": 15.6
+    "avg_delivery_days": 15.6,
+    "total_revenue": 287870.46
   },
   {
     "state": "PE",
     "order_count": 1593,
-    "avg_delivery_days": 18.4
+    "avg_delivery_days": 18.4,
+    "total_revenue": 261739.94
   },
   {
     "state": "CE",
     "order_count": 1279,
-    "avg_delivery_days": 21.3
+    "avg_delivery_days": 21.3,
+    "total_revenue": 226264.06
   },
   {
     "state": "PA",
     "order_count": 946,
-    "avg_delivery_days": 23.8
+    "avg_delivery_days": 23.8,
+    "total_revenue": 178821.12
   },
   {
     "state": "MT",
     "order_count": 886,
-    "avg_delivery_days": 18.1
+    "avg_delivery_days": 18.1,
+    "total_revenue": 156313.53
   },
   {
     "state": "MA",
     "order_count": 717,
-    "avg_delivery_days": 21.6
+    "avg_delivery_days": 21.6,
+    "total_revenue": 119291.62
   },
   {
     "state": "MS",
     "order_count": 701,
-    "avg_delivery_days": 15.6
+    "avg_delivery_days": 15.6,
+    "total_revenue": 116754.65
   },
   {
     "state": "PB",
     "order_count": 517,
-    "avg_delivery_days": 20.4
+    "avg_delivery_days": 20.4,
+    "total_revenue": 114874.1
   },
   {
     "state": "PI",
     "order_count": 476,
-    "avg_delivery_days": 19.5
+    "avg_delivery_days": 19.5,
+    "total_revenue": 86660.09
   },
   {
     "state": "RN",
     "order_count": 474,
-    "avg_delivery_days": 19.3
+    "avg_delivery_days": 19.3,
+    "total_revenue": 83034.98
   },
   {
     "state": "AL",
     "order_count": 397,
-    "avg_delivery_days": 24.5
+    "avg_delivery_days": 24.5,
+    "total_revenue": 80314.81
   },
   {
     "state": "SE",
     "order_count": 335,
-    "avg_delivery_days": 21.5
+    "avg_delivery_days": 21.5,
+    "total_revenue": 58920.85
   },
   {
     "state": "TO",
     "order_count": 274,
-    "avg_delivery_days": 17.7
+    "avg_delivery_days": 17.7,
+    "total_revenue": 49407.99
   },
   {
     "state": "RO",
     "order_count": 243,
-    "avg_delivery_days": 19.4
+    "avg_delivery_days": 19.4,
+    "total_revenue": 46031.64
   },
   {
     "state": "AM",
     "order_count": 145,
-    "avg_delivery_days": 26.4
+    "avg_delivery_days": 26.4,
+    "total_revenue": 22356.84
   },
   {
     "state": "AC",
     "order_count": 80,
-    "avg_delivery_days": 21.0
+    "avg_delivery_days": 21.0,
+    "total_revenue": 15982.95
   },
   {
     "state": "AP",
     "order_count": 67,
-    "avg_delivery_days": 27.2
+    "avg_delivery_days": 27.2,
+    "total_revenue": 13474.3
   },
   {
     "state": "RR",
     "order_count": 41,
-    "avg_delivery_days": 29.4
+    "avg_delivery_days": 29.4,
+    "total_revenue": 7739.44
   }
 ]

@@ -22,6 +22,7 @@ export interface GeographicBreakdownRow {
   state: string; // 2-letter Brazilian state code, e.g. "SP"
   order_count: number;
   avg_delivery_days: number;
+  total_revenue: number;
 }
 
 export interface DeliveryPerformanceOverallRow {

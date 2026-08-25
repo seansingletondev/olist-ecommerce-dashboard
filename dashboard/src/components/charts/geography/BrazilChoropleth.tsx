@@ -6,7 +6,7 @@ import { useJsonData } from "../../../lib/useJsonData";
 import { useContainerWidth } from "../../../lib/useContainerWidth";
 import { sequentialScale } from "../../../lib/colorScales";
 import { sequentialBlue } from "../../../lib/palette";
-import { formatCount } from "../../../lib/format";
+import { formatCount, formatCurrencyCompact, formatPercent } from "../../../lib/format";
 import { formatStateLabel } from "../../../lib/brazilStates";
 import type { GeographicBreakdownRow } from "../../../types/data";
 import { ChartCard } from "../../layout/ChartCard";
@@ -96,6 +96,15 @@ export function BrazilChoropleth() {
   const hoveredRow = hovered ? byState.get(hovered.sigla) : undefined;
   const ready = path && bounds;
 
+  // The tooltip/table show each state's revenue as a share of the whole
+  // country's -- that share is just this state's total_revenue divided by
+  // the sum of every state's total_revenue, so it's computed here from
+  // data already loaded for the map rather than needing its own query.
+  const totalRevenueAllStates = useMemo(
+    () => (data ? data.reduce((sum, row) => sum + row.total_revenue, 0) : 0),
+    [data],
+  );
+
   const tableView = (
     <table className={styles.table}>
       <thead>
@@ -103,6 +112,8 @@ export function BrazilChoropleth() {
           <th>State</th>
           <th>Orders</th>
           <th>Avg. delivery (days)</th>
+          <th>Revenue</th>
+          <th>% of national revenue</th>
         </tr>
       </thead>
       <tbody>
@@ -113,6 +124,8 @@ export function BrazilChoropleth() {
               <td>{formatStateLabel(row.state)}</td>
               <td>{formatCount(row.order_count)}</td>
               <td>{row.avg_delivery_days.toFixed(1)}</td>
+              <td>{formatCurrencyCompact(row.total_revenue)}</td>
+              <td>{formatPercent((row.total_revenue / totalRevenueAllStates) * 100)}</td>
             </tr>
           ))}
       </tbody>
@@ -208,6 +221,11 @@ export function BrazilChoropleth() {
                     ? [
                         { label: "Orders", value: formatCount(hoveredRow.order_count) },
                         { label: "Avg. delivery", value: `${hoveredRow.avg_delivery_days.toFixed(1)} days` },
+                        { label: "Revenue", value: formatCurrencyCompact(hoveredRow.total_revenue) },
+                        {
+                          label: "% of Brazil",
+                          value: formatPercent((hoveredRow.total_revenue / totalRevenueAllStates) * 100),
+                        },
                       ]
                     : [{ label: "Orders", value: "No data" }]
                 }
