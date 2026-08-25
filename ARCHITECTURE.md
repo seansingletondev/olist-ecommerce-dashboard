@@ -34,8 +34,8 @@ Source: [Kaggle - Brazilian E-Commerce Public Dataset by Olist](https://www.kagg
 | Database | PostgreSQL, hosted free on [Neon](https://neon.tech) | Industry-standard RDBMS (unlike SQLite, it's actually named in DA/DS job postings); serverless free tier means no server to babysit |
 | Analysis | SQL (CTEs, window functions, joins) run against Postgres | This is where the "SQL skill" of the project lives — real aggregate queries, not just ORM calls |
 | Data hand-off | Python exports query results as static JSON files | Decouples the dashboard from the live DB — see Data Flow below |
-| Dashboard | TypeScript + D3.js, static site (Vite) | D3 shows custom SVG/scale/transition work, not just a chart-library wrapper; static build deploys free and has no moving parts to keep alive |
-| Hosting | GitHub Pages or Vercel (static) | Free, simple, reliable for a portfolio link |
+| Dashboard | React + TypeScript + D3.js, static site (Vite) | D3 shows custom SVG/scale/transition work, not just a chart-library wrapper — used for every chart, not just 1-2 hero visuals; React handles component structure/state so that plumbing doesn't compete with the D3 work |
+| Hosting | [Vercel](https://vercel.com) (static) | Free, deploys straight from the repo, no server to maintain |
 
 ## Data Flow
 
@@ -62,9 +62,9 @@ Python export step (python/export/)
   - writes results to dashboard/public/data/*.json
         │
         ▼
-TypeScript + D3 dashboard (dashboard/)
+React + TypeScript + D3 dashboard (dashboard/)
   - static site, reads the prebuilt JSON
-  - builds with Vite, deploys to GitHub Pages/Vercel
+  - builds with Vite, deploys to Vercel
 ```
 
 Postgres is the analytical engine used during development/build (and where all the
@@ -119,5 +119,5 @@ ARCHITECTURE.md            this file
 1. **Schema + load**: write `sql/schema.sql`, Python ingestion script to load all 9 CSVs into Neon Postgres.
 2. **SQL analysis**: write and validate the analysis queries in `sql/queries/`.
 3. **Export step**: Python script runs each query, writes JSON into `dashboard/public/data/`.
-4. **Dashboard scaffold**: Vite + TypeScript project, D3 for 1–2 hero visualizations (Brazil choropleth, sales trend) plus simpler charts for the rest.
-5. **Deploy**: push static build to GitHub Pages or Vercel; README ties the story together (Python → SQL → TS/D3).
+4. **Dashboard**: React + TypeScript + Vite project, D3 for every chart (not just hero visuals) — Brazil choropleth, sales trends, delivery performance, reviews, category performance, RFM segmentation.
+5. **Deploy**: public repo, static build deployed to Vercel; README ties the story together (Python → SQL → TS/D3).

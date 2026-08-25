@@ -1,32 +1,19 @@
-# React + TypeScript + Vite
+# dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+The React + TypeScript + D3 frontend for the Olist analytics dashboard. See the
+[repo root README](../README.md) for the full Python → SQL → TypeScript/D3
+pipeline this is the last step of, and `../ARCHITECTURE.md` for the fuller
+design write-up.
 
-Currently, two official plugins are available:
+This package only reads pre-generated JSON from `public/data/` (written by
+`python/export/export_to_json.py`) — it has no database connection of its own,
+which is what makes it deployable as a plain static site.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Scripts
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
 ```
-
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+npm run dev       # start the Vite dev server
+npm run build     # type-check + production build (dist/)
+npm run preview   # serve the production build locally
+npm run lint      # oxlint
+```
